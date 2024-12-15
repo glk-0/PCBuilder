@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.storeKeeper.EditComponentActivity">
+
+    <TextView
+        android:id="@+id/txtFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Edit Component Qty or Comment"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Type"
+        android:inputType="text"
+        android:enabled="false"
+        android:fontFamily="@font/raleway_bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtFunction"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/txtFunction"
+        app:layout_constraintTop_toBottomOf="@+id/txtFunction" />
+
+    <EditText
+        android:id="@+id/edtTxtComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Comment"
+        android:inputType="text"
+        android:fontFamily="@font/raleway_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtQuantity" />
+
+    <EditText
+        android:id="@+id/edtTxtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        android:enabled="false"
+        android:fontFamily="@font/raleway_bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtSubType"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtSubType"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtSubType" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Save changes"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtComment"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtComment"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtComment" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDecrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
+        android:text="-"
+        android:textSize="16dp"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtTitle" />
+
+    <EditText
+        android:id="@+id/edtTxtQuantity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Qty"
+        android:inputType="number"
+        android:fontFamily="@font/raleway_bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnIncrement"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:text="+"
+        android:textSize="16dp"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintEnd_toStartOf="@+id/btnDecrement"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtTitle" />
+
+    <EditText
+        android:id="@+id/edtTxtSubType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Subtype"
+        android:inputType="text"
+        android:enabled="false"
+        android:fontFamily="@font/raleway_bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtType"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtType"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtType" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSave"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave"
+        app:layout_constraintVertical_bias="0.222" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

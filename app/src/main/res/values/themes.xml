@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Groupe39" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="buttonStyle">@style/CustomMaterialButton</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="CustomMaterialButton" parent="Widget.MaterialComponents.Button">
+        <!-- Background color -->
+        <item name="backgroundTint">@color/white</item>
+        <!-- Font family -->
+        <item name="fontFamily">@font/raleway_bold</item>
+
+
+        <!-- Text color -->
+        <item name="android:textColor">@color/black</item>
+
+        <!-- Elevation for shadow -->
+        <item name="android:elevation">16dp</item>
+
+        <!-- Padding -->
+        <item name="android:padding">12dp</item>
+
+        <!-- Translation for horizontal movement -->
+        <item name="android:translationZ">8dp</item>
+    </style>
+    <style name="Theme.Groupe39" parent="Base.Theme.Groupe39" />
+</resources>

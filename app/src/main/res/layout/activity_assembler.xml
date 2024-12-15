@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.Assembler.AssemblerActivity">
+
+    <TextView
+        android:id="@+id/txthello"
+        android:fontFamily="@font/raleway_bold"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Hello Assembler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPendingOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Pending Orders"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/txthello"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="@+id/txthello"
+        app:layout_constraintTop_toBottomOf="@+id/txthello" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtTxtIDDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:fontFamily="@font/raleway_bold"
+
+        android:hint="Enter Order Number"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/btnRejectOrder"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRejectOrder"
+        style="@style/CustomMaterialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Reject Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtIdApproveOrder" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="237dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtTxtIdValidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/raleway_bold"
+        android:hint="Enter Order Number"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/btnValidateOrder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtIDDelete"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtIDDelete" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnValidateOrder"
+        style="@style/CustomMaterialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validate Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="@+id/btnRejectOrder"
+        app:layout_constraintTop_toBottomOf="@+id/btnRejectOrder" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnApproveOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Approve Order"
+        style="@style/CustomMaterialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnValidateOrder"
+        app:layout_constraintTop_toBottomOf="@+id/btnValidateOrder" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtTxtIdApproveOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:fontFamily="@font/raleway_bold"
+        android:hint="Enter Order Number"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/btnApproveOrder"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtIdValidate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

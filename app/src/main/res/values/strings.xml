@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">groupe-39</string>
+    <string name="LastName">LastName</string>
+    <string name="admin_email">admin@uottawa.ca</string>
+    <string name="admin_password">123</string>
+    <string name="storeKeeper_email">storeKeeper@uottawa.ca</string>
+    <string name="storeKeeper_password">123</string>
+    <string name="assembler_email">assembler@uottawa.ca</string>
+    <string name="assembler_password">123</string>
+</resources>
